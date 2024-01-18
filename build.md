@@ -14,16 +14,16 @@ OR\
 ### See README.md for more details
 
 Build Deployment:\
-`poetry run ectf_build_depl -d ../2024-ectf-unhaven`
+`poetry run ectf_build_depl -d ../ectf-2024-unhaven`
 
 Build AP:\
-`poetry run ectf_build_ap -d ../2024-ectf-unhaven -on ap --p 123456 -c 2 -ids "0x11111124, 0x11111125" -b "Test boot message - UNHaven" -t 0123456789abcdef -od build`
+`poetry run ectf_build_ap -d ../ectf-2024-unhaven -on ap --p 123456 -c 2 -ids "0x11111124, 0x11111125" -b "Test boot message - UNHaven" -t 0123456789abcdef -od build`
 
 Build Sensors/Components:\
-`poetry run ectf_build_comp -d ../2024-ectf-unhaven -on comp24 -od build -id 0x11111124 -b "Component boot" -al "West Haven" -ad "01/18/2024" -ac "Charlie"`
+`poetry run ectf_build_comp -d ../ectf-2024-unhaven -on comp24 -od build -id 0x11111124 -b "Component boot" -al "West Haven" -ad "01/18/2024" -ac "Charlie"`
 
 Flash Boards:\
-`poetry run ectf_update --infile ../2024-ectf-unhaven/build/ap.img --port /dev/ttyUSB0`
+`poetry run ectf_update --infile ../ectf-2024-unhaven/build/ap.img --port /dev/ttyUSB0`
 
 ## Host Tools
 List Tool:\
