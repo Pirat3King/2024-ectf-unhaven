@@ -173,7 +173,8 @@ VPATH += src
 
 # eCTF Crypto Example
 ifeq ($(CRYPTO_EXAMPLE), 1)
-VPATH += wolfssl/wolfcrypt/src
+VPATH += ../crypto/wolfssl/wolfcrypt/src
+
 endif
 
 VPATH := $(VPATH)
@@ -185,8 +186,8 @@ IPATH += include
 
 # eCTF Crypto Example
 ifeq ($(CRYPTO_EXAMPLE), 1)
-IPATH += wolfssl
-IPATH += ../micro_ecc
+IPATH += ../crypto/wolfssl
+IPATH += ../crypto/micro_ecc
 endif
 
 IPATH := $(IPATH)

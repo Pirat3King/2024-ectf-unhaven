@@ -183,8 +183,8 @@ IPATH += .
 IPATH += include
 # eCTF Crypto Example
 ifeq ($(CRYPTO_EXAMPLE), 1)
-IPATH += wolfssl
-IPATH += ../micro_ecc
+IPATH += ../crypto/wolfssl
+IPATH += ../crypto/micro_ecc
 endif
 IPATH := $(IPATH)
 
